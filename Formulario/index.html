@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>E.X Company | Formulário</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="img/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jQuery-3.4.1.min.js"></script>
+		<script src="js/jQueryMask.min.js"></script>
+	</head>
+	<body>
+		<div class="bg_top"></div>
+		<div class="main">
+			<form action="/action.php" method="post">
+				<div class="col1">
+					<label for="nome">Nome Completo:</label>
+					<input name="nome" id="nome" type="text" placeholder="Nome Completo">
+					<label for="rg">RG:</label>
+					<input name="rg" id="rg" type="text" placeholder="00.000.000-00">
+					<label for="nome">Pai:</label>
+					<input name="nome_pai" id="nome_pai" type="text" placeholder="Nome do Pai">
+					<label for="escolaridade">Escolaridade:</label>
+					<select id="escolaridade" name="escolaridade">
+						<option value="" disabled selected hidden>Selecione</option>
+						<option value="1">Ensino Médio Incompleto</option>
+						<option value="2">Ensino Médio Completo</option>
+						<option value="3">Ensino Superior Incompleto</option>
+						<option value="4">Ensino Superior Completo</option>
+					</select>
+					<label for="rg">Telefone:</label>
+					<input name="telefone" id="telefone" type="text" placeholder="0000-0000">
+					<label for="email">E-mail:</label>
+					<input name="email" id="email" type="email" placeholder="exemplo@email.com">
+					<input type="submit" id="cadastrar" value="Cadastrar">
+					<input type="reset" id="reset" value="Limpar Campos">
+				</div>
+				<div class="col2">
+					<label for="data">Data de Nascimento:</label>
+					<input name="data" id="data" type="text" placeholder="__/__/____">
+					<label for="cpf">CPF:</label>
+					<input name="cpf" id="cpf" type="text" placeholder="000.000.000-00">
+					<label for="nome">Mãe:</label>
+					<input name="nome_mae" id="nome_mae" type="text" placeholder="Nome da Mãe">
+					<label for="nome">Profissão:</label>
+					<input name="profissao" id="profissao" type="text" placeholder="Profissão">
+					<label for="rg">Celular:</label>
+					<input name="celular" id="celular" type="text" placeholder="(00) 00000-0000">
+				</div>
+			</form>
+		</div>
+		<script>
+			$(document).ready(function(){
+				$('#data').mask('00/00/0000');
+				$('#telefone').mask('0000-0000');
+				$('#celular').mask('(00) 00000-0000');
+				$('#cpf').mask('000.000.000-00');
+				$('#rg').mask('00.000.000-00');
+			});
+		</script>
+	</body>
+</html>
