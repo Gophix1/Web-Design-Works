@@ -1,0 +1,31 @@
+body, html {margin: 0; height: 100%; width: 100%;}
+
+.bg_top {background-color: #45543D; height: 50px; width: 100%;}
+
+.main {width: 730px; margin: auto;}
+
+.col1 {float: left; margin-top: 55px;}
+
+.col2 {float: right; margin: 120px 0 0 0;}
+
+input, select {padding: 9px; background-color: #E8EFE4; border: 1px solid #bfbfbf; border-radius: 4px;}
+
+input, label, select {display: block; margin: 0 0 7px 0;}
+
+input:focus {outline: none;}
+
+#reset, #cadastrar {float: left; background-color: #45543D; color: white; margin-top: 9px; cursor: pointer;}
+
+#reset:active, #cadastrar:active {background-color:#313e2b;}
+
+#reset {margin-left: 7px;}
+
+#nome, #email {width: 294px;}
+
+#rg, #telefone {width: 172px;}
+
+#nome_pai {width: 253px;}
+
+select {width: 103px;}
+
+.col2 input {width: 210px;}

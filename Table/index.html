@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nova | Table</title>
+		<meta charset="utf-8">
+		<!--<link rel="stylesheet" href="css/style.css">-->
+		<link rel="shortcut icon" href="img/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery3.4.1.min.js"></script>
+		<script src="js/jquery.inputmask.min.js"></script>
+		<style>
+			/*cinza: #dddddd*/
+			/*cinza escuro: #a0a0a0*/
+			/*verde: #60cb72*/
+			/*roxo: #605dac*/
+			/*azul: #1f81dd*/
+			
+			* {box-sizing: border-box;}
+			
+			body, html {margin: 50px; width: 100%; height: 100%; background-color: #dddddd; font-family: arial; text-align: center;}
+			table {width: 100%;}
+			
+			th {border: 1px solid;}
+			
+			tr td:not(input):not(td:only-of-type) {color: #a0a0a0}
+			
+			tr:nth-child(even):not(.purchase) {background-color: #f2f2f2;}
+			
+			td {padding: 10px;}
+			
+			.basic {color: #60cb72;}
+			.standard {color: #605dac;}
+			.premium {color: #1f81dd;}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th class="basic">Basic</th>
+				<th class="standard">Standard</th>
+				<th class="premium">Premium</th>
+			</tr>
+			<tr>
+				<th class="basic">$99</th>
+				<th class="standard">$99</th>
+				<th class="premium">$99</th>
+			</tr>
+			<tr>
+				<td>$99</td>
+				<td>$99</td>
+				<td>$99</td>
+			</tr>
+			<tr>
+				<td>Option</td>
+				<td>Option</td>
+				<td>Option</td>
+			</tr>
+			<tr>
+				<td>Option</td>
+				<td>Option</td>
+				<td>Option</td>
+			</tr>
+			<tr>
+				<td>Option</td>
+				<td>Option</td>
+				<td>Option</td>
+			</tr>
+			<tr>
+				<td>Option</td>
+				<td>Option</td>
+				<td>Option</td>
+			</tr>
+			<tr>
+				<td>Option</td>
+				<td>Option</td>
+				<td>Option</td>
+			</tr>
+			<tr>
+				<td>Option</td>
+				<td>Option</td>
+				<td>Option</td>
+			</tr>
+			<tr>
+				<td>Option</td>
+				<td>Option</td>
+				<td>Option</td>
+			</tr>
+			<tr id="purchase">
+				<td><input type="button" value="Purchase"></td>
+				<td><input type="button" value="Purchase"></td>
+				<td><input type="button" value="Purchase"></td>
+			</tr>
+		</table>
+	</body>
+</html>
