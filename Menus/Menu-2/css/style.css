@@ -1,0 +1,9 @@
+@font-face {font-family: ITC-Heavy; src: url(../font/adderville-itc-std-heavy.otf);}
+
+body {font-family: ITC-Heavy; font-size: 20px;}
+
+ul {list-style: none; margin: 0; padding: 0;}
+
+li {float: left;}
+
+a {text-decoration: none;}
