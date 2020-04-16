@@ -1,9 +1,13 @@
 @font-face {font-family: ITC-Heavy; src: url(../font/adderville-itc-std-heavy.otf);}
 
-body {font-family: ITC-Heavy; font-size: 20px;}
+* {box-sizing: border-box;}
 
-ul {list-style: none; margin: 0; padding: 0;}
+body {font-size: 18px; font-family: ITC-Heavy;}
 
-li {float: left;}
+a {padding: 16px 28px; color: white; display: block; text-decoration: none;}
 
-a {text-decoration: none;}
+a:hover {background-image: linear-gradient(#3c9be4, #1774b9);}
+
+ul {list-style: none; margin: 0; padding: 0; width: 600px; background-image: linear-gradient(#5a5a5a, #242424); border-radius: 3px; border-bottom: 4px solid #1072bb;}
+
+li {display: inline-block;}
