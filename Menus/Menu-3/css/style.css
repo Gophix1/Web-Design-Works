@@ -1,0 +1,31 @@
+body {font-size: 14px; font-family: Calibri;}
+
+a {padding: 10px 22px; color: white; text-decoration: none; display: inline-block}
+
+a:hover {box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15); background-color: #3fa338;}
+
+ul {list-style: none; margin: 0; padding: 0; background-image : linear-gradient(#1e1e1e, #040404); border-top: 4px solid #3fa338;}
+
+#active {background-color: #3fa338;}
+
+ul ul {display: none; box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.15); position: relative; top: 100%; left: 0;}
+
+li {display: inline-block; position: relative;}
+
+ul li:hover > ul, ul li:hover ul:hover > ul {display: block;}
+
+ul li:hover {background-color: #F5F5F5;}
+
+ul li li {background-color: #ffffff; border-bottom: 1px solid #ebebeb; font-size: 12px;}
+
+ul ul {position: absolute; left: 0; border-top: initial; box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.15);}
+
+ul ul li {position: relative; width: 150px;}
+
+ul ul li a {color: #9a9a9a;}
+
+ul li ul a:hover {background-color: transparent; box-shadow: none;}
+
+ul li ul ul {position: absolute; left: 150px; top:0;}
+
+ul li > ul {z-index: 1;}
