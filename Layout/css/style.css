@@ -15,10 +15,12 @@ body, html {margin: 0; text-transform: uppercase; font-family: Teko-Medium; widt
 
 #topo {border: 2px solid #e40090; color: #e40090; margin: 5px; padding: 40px 0;}
 
-#conteudo {border: 2px solid #98dac6; color: #98dac6; float: left; width: 68%; margin: 5px 5px 10px 5px; padding: 220px 0;}
+#conteudo {border: 2px solid #98dac6; color: #98dac6; width: calc(70% - 10px); margin: 5px; padding: 220px 0;}
 
-#menu {border: 2px solid #98dac6; color: #98dac6; float: left; width: 30%; margin: 5px; clear: right; padding: 220px 0;}
+#menu {border: 2px solid #98dac6; color: #98dac6; width: calc(30% - 10px); padding: 220px 0; margin: 5px;}
 
-#rodape {border: 2px solid #ff7b00; color: #ff7b00; clear: both; margin: 5px; padding: 100px 0 60px 0;}
+#conteudo, #menu {display: inline-block;}
+
+#rodape {border: 2px solid #ff7b00; color: #ff7b00; margin: 5px; padding: 100px 0 60px 0;}
 
 span {position: relative; bottom: -1px; font-size: 26px}
