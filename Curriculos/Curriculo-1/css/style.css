@@ -22,7 +22,7 @@ h3 {margin: 15px 0px 6px 0px;}
 
 #profile {height: 250px; float: right; margin: 5px;}
 
-#clear {clear: right;}
+#clearfix {clear: right;}
 
 ul {margin: 0px; padding: 0px; list-style-position: inside;}
 
