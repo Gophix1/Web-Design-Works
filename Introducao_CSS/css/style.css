@@ -24,7 +24,7 @@ img {width:12em;}
 
 footer {display: grid; grid-template-columns: auto auto auto; grid-column-gap: 5px}
 
-footer div {padding: 3em 3em 6em 3em; background:#571212}
+footer div {padding: 3em 3em 5em 3em; background:#571212}
 
 footer p {color:#E98A8A}
 
