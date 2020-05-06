@@ -1,0 +1,23 @@
+* {box-sizing: border-box}
+
+body {font-family: arial}
+
+ul {background: #333333; list-style: none; margin: 0; padding: 0}
+
+li {display: inline-block; position: relative}
+
+li:hover {background: red}
+
+a {color: white; text-decoration: none; padding: 15px; display: inline-block}
+
+img {width: 10px; float: right; margin-left: 5px}
+
+ul li:hover > ul {display: inline-block}
+
+ul ul {display: none; top: 100%; position: absolute; left: 0; background: #f9f9f9; box-shadow: 0 5px 20px 0px #0000001c}
+
+ul ul a {color: black; width: 100%}
+
+ul ul li {position: relative; width: 150px}
+
+ul ul li:hover {background: #efefef}
