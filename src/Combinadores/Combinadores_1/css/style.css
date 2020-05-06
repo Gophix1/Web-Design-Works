@@ -1,0 +1,11 @@
+body {font-size: 1.5em; font-family: arial}
+
+a {text-decoration: none; color: #007bff; padding: 0.3em 0.6em; display: inline-block}
+
+ul {list-style: none; padding: 0; margin: 0; border: 1px solid #dee2e6; display: inline-block; border-radius: 3px}
+
+ul > li {border-right: 1px solid #dee2e6;  display: inline-block}
+
+ul > li:last-child {border: none}
+
+ul > li:hover {background: #e9ecef}
