@@ -1,4 +1,4 @@
-body {margin: 0; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; background: black; text-align: center}
+body {margin: 0; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; background: #0f101b; text-align: center}
 
 main {display: flex; flex-wrap: wrap; margin: 20px 20px 0 20px}
 
