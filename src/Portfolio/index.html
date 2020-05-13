@@ -1,22 +1,98 @@
 <!DOCTYPE html>
-<html data-theme="light">
+<html>
 	<head>
 		<title>Portfólio | Projeto MIW</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="favicon.png">
+		<link rel="shortcut icon" href="img/favicon.png">
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/global.js"></script>
 		<style>
-			body, html {margin: 0; background: white; color: black}
-			ul {list-style: none; padding: 0; margin: 0}
+// Estillos não tão importantes para se alterar sempre
+			::-webkit-scrollbar {width: 10px}
+			::-webkit-scrollbar-track {background: #131313}
+			::-webkit-scrollbar-thumb {background: #232323}
+			::-webkit-scrollbar-thumb:hover {background: #383838}
+			
+			#return-to-top {position: fixed; bottom: 20px; right: 20px; background: #191919b3; width: 50px; height: 50px; display: block; text-decoration: none; border-radius: 35px; display: none; transition: all 0.3s ease;}
+			#return-to-top img {margin: 0; position: relative; left: 16px; top: 13px; width: 19px; transition: all 0.3s ease;}
+			#return-to-top:hover {background: #2b2b2bb3;}
+			#return-to-top:hover img {top: 5px;}
+// Estillos não tão importantes para se alterar sempre
+			
+			* {box-sizing: border-box;}
+			
+			body, html {width: 100%; height: 100%; margin: 0; background: black}
+			
+			ul a {color: white; text-decoration: none; position: relative;}
+			
+			ul a:after {background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 1px; left: 50%; position: absolute; background: white; transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0;}
+			
+			ul a:hover:after {width: 100%; left: 0;}
+			
+			span {margin: 0 10px;}
+			
+			ul {list-style: none; padding: 0; margin: 0; text-align: center; font-family: 'Jost', sans-serif; text-transform: uppercase; position: relative; top: 10px;}
+			
+			li {display: inline-block;}
+						
+			.fill {width: 100%; height: 100%;}
+			
+			.fill1 {background: ;}
+			
+			.fill2 {background: ;}
+			
+			.fill3 {background: ;}
+			
+			.title {font-family: 'Open Sans', sans-serif; margin: 0; text-transform: uppercase; color: white}
+						
+			.t_worlds, .t_elementos {position: absolute; transform: translate(-50%,-50%); top: 50%; left: 50%;}
+			
+			.t_elementos {transform: none; top: 150%; margin-left: 150px; left: 0}
+			
+			.t_elementos {top: 250%;}
+			
+			p {font-family: 'Roboto', sans-serif; font-size: 20px; color: white}
+			
+			.d_projeto {position: relative; top: 50%; margin: auto; transform: translate(0, -50%); width: 60%; text-align: center}
+			
+			@media (max-width: 450px) {
+				p {font-size: 18px;}
+				.d_projeto {width: 90%;}
+				ul {width: 90%; margin:auto}
+			}
 		</style>
 	</head>
 	<body>
-		<ul>  
-			<li>Sobre</li>
-			<li>Projetos</li>
-			<li>Inspirações</li>
-			<li>Contato</li>
-		</ul>
+	<a href="javascript:" id="return-to-top"><img src="img/chevron-up.svg"></a>
+	
+		<div class="fill1 fill">
+			<ul>
+				<li><a href="#projeto">O Projeto</a></li><!--
+			 --><span></span><!--
+			 --><li><a href="#elementos">Elementos</a></li><!--
+			 --><span></span><!--
+			 --><li><a href="#inspirações">Inspirações</a></li><!--
+			 --><span></span><!--
+			 --><li><a href="#contato">Contato</a></li><!--
+			 --><span></span><!--
+			 --><li><a href="#sobre">Sobre Mim</a></li>
+			</ul>
+		<h1 class="t_worlds title">Worlds</h1>
+		</div>
+		
+		<div id="projeto" class="fill2 fill">
+			<p class="d_projeto">'Worlds' é a criação de mundos fictícios baseado em histórias reais de experiências de vida, criados artísticamente de acordo com a personalidade única de cada pessoa.</p>
+		</div>
+		
+		<div id="elementos" class="fill3 fill">
+			<h1 class="title t_elementos">Elementos</h1>
+			<p>Os elementos mais comuns são objetos que já significaram algo algum dia. Os cenários costumam ser ao ar livre ou com grandes estruturas.</p>
+		</div>
+		
 	</body>
 </html>
