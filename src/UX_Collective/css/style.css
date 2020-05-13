@@ -1,0 +1,53 @@
+@font-face {font-family: Marat; src: url(../font/Marat.otf);}
+
+body {margin: 0}
+
+main {padding: 15px 100px 0 100px;}
+
+header {background: black; height: 40px; padding: 7px 7px 7px 25px}
+
+footer {background: black; height: 90px; padding: 0 250px}
+
+footer img {position: relative; top: 25px}
+
+article {margin-bottom: 50px; display: grid; grid-template-columns: 80% 20%;}
+
+article > img {height: 100%}
+
+.articles {padding: 0 150px}
+
+.article_main {width: 80%}
+
+ul {list-style: none; margin: 0; padding: 0; display: inline-block; position: relative; top: -25%}
+
+ul span {margin: 0 15px;}
+
+li {display: inline-block; text-transform: uppercase; font-family: Marat}
+			
+a {color: white; text-decoration: none; letter-spacing: 2px}
+
+.logo span {color: white; font-weight: bold;}
+
+.logo {display: inline-block; margin-right: 85px;}
+
+.logo img {width: 37px; margin-right: 10px}
+
+.logo span {font-size: 24px; position: relative; top: -10px;}
+			
+.icon {width: 15px; float: right; margin: 10px}
+
+.star {width: 10px; float: none; margin: 0}
+
+.based, .date, .description {color: gray}
+
+.based {margin: 0; font-family: Marat; text-transform: uppercase}
+
+h2 {font-family: helvetica; margin: 5px 0 0 0}
+
+.description {margin: 5px 0}
+
+.date {margin: 0}
+
+.autor {margin: 20px 0 5px 0}
+
+p {font-family: arial}
