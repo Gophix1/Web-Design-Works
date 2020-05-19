@@ -2,7 +2,7 @@
 @font-face {font-family: "Open Sans"; src: url(../font/OpenSans-ExtraBold.ttf);}
 @font-face {font-family: Jost; src: url(../font/Jost-Light.ttf);}
 
-::-webkit-scrollbar {width: 8px}
+::-webkit-scrollbar {width: 8px; height: 8px}
 ::-webkit-scrollbar-track {background: #bbbbbba6}
 ::-webkit-scrollbar-thumb {background: #61616182}
 ::-webkit-scrollbar-thumb:hover {background: #00000082}
