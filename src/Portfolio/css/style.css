@@ -45,7 +45,7 @@ li {display: inline-block;}
 
 p {font-family: monospace; font-size: 16px; margin-top: 0;}
 
-.grid {font-size: 0; width: 450px; margin-right: 20px; float: left;}
+.grid {font-size: 0; max-width: 450px; margin-right: 20px; float: left;}
 
 #projeto p {margin: auto; width: 60%; text-align: center; font-size: 20px; font-family: roboto}
 
@@ -73,12 +73,14 @@ footer {text-align: center; margin: 50px 0}
 footer a {text-decoration: none}
 
 @media (max-width: 450px) {
-	p {font-size: 18px;}
+	h1 {font-size: 26px}
+	p {font-size: 14px;}
 	ul {width: 90%; margin:auto}
 	#projeto, #historia, #inspiracoes, #futuro, #sobre {margin: 0 20px;}
 	#projeto p {width: auto}
 	#historia img {width: 100%; margin: 0 0 10px 0; float: none}
 	#futuro img {float: none; margin: 0 0 10px 0; width: 100%}
-	#inspiracoes img {width: 124px;}
-	.grid {width: 100%; margin: 0 0 10px 0}
+	#inspiracoes {overflow: visible;}
+	#inspiracoes img {min-width: 100px; flex: 1}
+	.grid {margin: 0 0 10px 0; display: flex; flex-wrap: wrap; width: 100%;}
 }
