@@ -1,0 +1,38 @@
+@font-face {font-family: Arial-Condensed; src: url(../font/arial-mt-condensed-light.ttf);}
+
+* {box-sizing: border-box;}
+
+body, html {margin: 0;}
+
+p {margin: 0; color: #525252; text-align: center; font-size: 2.5em; font-family: Arial-Condensed; text-transform: uppercase;}
+
+.top {width: 100%; height: 50px; background: #5995da;}
+
+header {background: #b2d6ff; padding: 150px 0;}
+
+.feature {display: inline-block; width: 33.33%; padding: 250px 0}
+.feature-orange {background: #f5cf8e;}
+.feature-red {background: #f09a9d;}
+.feature-purple {background: #c8c6fa;}
+		
+.sign-up {background: #d6e9fe; padding: 100px 0;}
+.sign-up-media {display: none;}
+
+.content {background: #eaedf0; padding: 250px 0;}
+.content-media {display: none;}
+
+@media only screen and (max-width: 1024px) {
+	p {font-size: 4em;}
+	.top {height: 80px;}
+	.content-desktop, .sign-up-desktop {display: none;}
+	.content-media {display: block;}
+	.sign-up-media, .feature {display: inline-block; padding: 200px 0; width: 50%;}
+}
+
+@media only screen and (max-width: 640px) {
+	p {font-size: 2.5em;}
+	.top {height: 50px;}
+	.content-desktop, .sign-up-desktop {display: none;}
+	.content-media {display: block;}
+	header, .feature, .sign-up-media {width: auto; display: block;padding: 100px 0;}
+}
