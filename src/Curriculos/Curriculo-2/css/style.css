@@ -7,7 +7,7 @@
 
 * {box-sizing: border-box;}
 
-body {margin: 0; font-family: calibri; min-width: 491px;}
+html, body {margin: 0; font-family: calibri; min-width: 491px; max-width: 100%}
 
 main {margin: 50px; border: 2px solid #3ea296; overflow: auto;}
 
@@ -70,6 +70,8 @@ a {color: #3ea296; text-decoration: none;}
 }
 
 @media (max-width: 713px) {
+	main {margin: 20px}
+	article, header {padding: 30px}
 	#profile {float: none; margin: 0 auto 50px auto; display: block;}
 	#descricao {margin-right: 0;}
 	.col1 {float: none; width: auto; margin-right: 0;}
