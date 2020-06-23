@@ -7,7 +7,7 @@
 
 * {box-sizing: border-box;}
 
-html, body {margin: 0; font-family: calibri; min-width: 491px; max-width: 100%}
+html, body {margin: 0; font-family: calibri;}
 
 main {margin: 50px; border: 2px solid #3ea296; overflow: auto;}
 
@@ -19,7 +19,7 @@ footer {text-align: center;}
 
 footer p {margin: 0 0 20px 0;}
 
-#profile {height: 270px; border-radius: 50%; margin: 0 50px 50px 0; border: 4px solid white; box-shadow: 0 0 0 6px #3ea296; float: left;}
+#profile {max-width: 270px; border-radius: 50%; margin: 0 50px 50px 0; border: 4px solid white; box-shadow: 0 0 0 6px #3ea296; float: left;}
 
 h1, h2, h3 {text-transform: uppercase; letter-spacing: 5px;}
 
@@ -55,8 +55,6 @@ ul {list-style-type: none; margin: 5px 0 15px 0; padding: 0; overflow: auto}
 
 ul li {width: 12px; height: 12px; border-radius: 50%; border: 1px solid #3ea296; float: left; margin: 0 10px 0 0;}
 
-li:last-child {margin: 0;}
-
 .o1 {background-color: #3ea296;}
 
 .o0 {background-color: none;}
@@ -70,15 +68,21 @@ a {color: #3ea296; text-decoration: none;}
 }
 
 @media (max-width: 713px) {
-	main {margin: 20px}
-	article, header {padding: 30px}
-	#profile {float: none; margin: 0 auto 50px auto; display: block;}
-	#descricao {margin-right: 0;}
+	main {margin: 20px;}
+	article, header {padding: 30px;}
+	#profile {float: none; margin: 0 auto 50px auto; display: block; width: 100%;}
+	h1, h2, h3 {letter-spacing: 2px;}
+	h1 {font-size: 1.5em;}
+	h2 {font-size: 1em;}
+	h3 {font-size: 0.9em;}
+	#descricao {margin: 0;}
 	.col1 {float: none; width: auto; margin-right: 0;}
 	.col2 {border: none; padding: 0;}
 	#experiencia {margin-top: 40px;}
 	ul {display: flex; margin-top: 5px;}
-	.o1, .o0 {margin: 0 auto; width: 17px; height: 17px;}
+	.o1, .o0 {margin: 0 auto; width: 13px; height: 13px;}
 	li:first-child {margin-left: 0;}
-	#habilidades p, #linguas p {font-weight: bold;}
+	li:last-child {margin-right: 0;}
+	#habilidades p, #linguas p {font-weight: bold; font-size: 0.9em;}
+	#experiencia p, #conquistas p, #educacao p {text-align: justify;}
 }
