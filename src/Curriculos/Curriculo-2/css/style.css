@@ -45,11 +45,7 @@ hr {border: 1px solid; width: 40px; margin: 15px 0;}
 
 .col2 p {color: #828282;}
 
-.icon {color: white; border-radius: 50%; background-color: #3ea296; width: 27px; height: 27px; float: left; margin: 0 15px 0 0 !important; clear: left}
-
-.icon-img {width: 55%; position: relative; transform: translate(-50%, -50%); top: 50%; left: 50%;}
-
-.marker {width: 47%;}
+.icon {width: 27px; height: 27px; background-color: #3ea296; padding: 5px; border-radius: 50%; float: left; margin: 0 15px 0 0;}
 
 b {display: block; text-transform: uppercase; color: #3ea296; margin: 0 0 5px 0;}
 
