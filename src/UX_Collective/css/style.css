@@ -68,7 +68,7 @@ p {font-family: arial}
 
 @media only screen and (max-width: 670px) {
 	main {padding: 15px 20px 0 20px;}
-	.cover {display: none;}
 	.articles {margin-left: 0;}
+	.article_main {margin-right: 0;}
 	footer {padding: 0 20px;}
 }
