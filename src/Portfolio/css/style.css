@@ -67,7 +67,7 @@ p {font-family: monospace; font-size: 16px; margin-top: 0;}
 #contato {text-align: center; margin: 50px 0}
 #contato img {width: 20px; margin: 0 10px;}
 #contato a {-webkit-filter: grayscale(1); filter: grayscale(1); transition: 0.3s;}
-#contato a:hover {filter: none;}
+#contato a:hover {-webkit-filter: none; filter: none;}
 
 footer {text-align: center; margin: 50px 0}
 footer a {text-decoration: none}
