@@ -1,12 +1,12 @@
-body {margin: 0; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; background: #0f101b; text-align: center}
+* {box-sizing: border-box; text-align: center;}
 
-main {display: flex; flex-wrap: wrap; margin: 20px 20px 0 20px}
+body, html {margin: 0; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; background: #0f101b; width: 100%}
 
-div {flex: 1; margin-bottom: 20px}
+main {display: -webkit-flex; display: flex; flex-wrap: wrap; margin: 20px 20px 0 20px}
 
 img {width: 200px; filter: grayscale(0.4); border-radius: 10px}
 
-a {text-decoration: none; color: white; display: block; -webkit-tap-highlight-color: transparent; font-size: 13px}
+a {flex: 1 0 auto; margin-bottom: 20px; text-decoration: none; color: white; display: block; -webkit-tap-highlight-color: transparent; font-size: 13px}
 
 a:hover {color: #797979}
 
