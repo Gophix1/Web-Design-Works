@@ -41,6 +41,11 @@ h2 {margin: 0; padding-bottom: 2em; font-size: 1.4em; font-weight: 400;}
 }
 
 @media only screen and (max-width: 600px) {
+	header {padding: 20px 20px;}
+	main {padding: 70px 30px;}
+	.logo, main br {display: none;}
+	.content {width: auto; padding: 0; float: none; display: block;}
+	footer {display: block;}
+	footer div {flex: 0 1 auto; padding: 40px;}
 	footer div:nth-child(2) {margin: 0 0 10px 0;}
-	footer div {flex: 1 0 100%;}
 }
