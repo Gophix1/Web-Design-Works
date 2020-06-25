@@ -1,12 +1,20 @@
+* {box-sizing: border-box;}
+
 body, html {margin: 0; height: 100%; width: 100%;}
 
 .bg_top {background-color: #45543D; height: 50px; width: 100%;}
 
-.main {width: 730px; margin: auto;}
+form {width: 730px; margin: 55px auto;}
 
-.col1 {float: left; margin-top: 55px;}
+.col1 {float: left;}
 
-.col2 {float: right; margin: 120px 0 0 0;}
+.submit {float: none; margin-top: 9px;}
+
+.clearfix {clear: both;}
+
+.col2 {float: right; margin-top: 60px;}
+
+.col2 input {width: 210px;}
 
 input, select {padding: 9px; background-color: #E8EFE4; border: 1px solid #bfbfbf; border-radius: 4px;}
 
@@ -14,7 +22,7 @@ input, label, select {display: block; margin: 0 0 7px 0;}
 
 input:focus {outline: none;}
 
-#reset, #cadastrar {float: left; background-color: #45543D; color: white; margin-top: 9px; cursor: pointer;}
+#reset, #cadastrar {background-color: #45543D; color: white; cursor: pointer; display: inline-block;}
 
 #reset:active, #cadastrar:active {background-color:#313e2b;}
 
@@ -26,6 +34,21 @@ input:focus {outline: none;}
 
 #nome_pai {width: 253px;}
 
-select {width: 103px;}
+@media (max-width: 800px) {
+	form {width: auto; margin: 55px;}
+}
 
-.col2 input {width: 210px;}
+@media (max-width: 800px) {
+	form {margin-bottom: 55px;}
+	.col1, .col2 {float: none;}
+	.col2 {margin: 0;}
+	br {display: none;}
+}
+
+@media (max-width: 600px) {
+	form {margin: 30px;}
+}
+
+@media (max-width: 400px) {
+	#nome, #rg, #nome_pai, #email, select, #telefone, .col2 input {width: 100%;}
+}
