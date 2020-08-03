@@ -36,6 +36,8 @@ article {margin-bottom: 60px;}
 			
 a {color: white; text-decoration: none; letter-spacing: 2px}
 
+.v-line {display: inline-block; width: 1px; height: 20px; background: white; position: relative; top: 5px;}
+
 .logo, h1 {font-family: 'Times New Roman'}
 
 .logo {display: inline-block; margin-right: 85px;}
@@ -63,6 +65,11 @@ h2 {font-family: helvetica; margin: 5px 0 0 0}
 .autor {margin: 20px 0 5px 0}
 
 p {font-family: arial}
+
+.modelo {position: fixed; width: 150px; height: 40px; padding: 5px; border: 1px solid black; border-radius: 30px; bottom: 15px; right: 15px; background: white;}
+.modelo:active {opacity: 0.6;}
+.modelo img {height: 100%; margin: 0 15px; display: inline-block; border-right: 1px solid black; padding-right: 10px;}
+.modelo p {color: black; margin: 0; display: inline-block; position: relative; transform: translateY(-50%); letter-spacing: normal;}
 
 @media only screen and (max-width: 1015px) {
 	main {padding: 15px 50px 0 50px;}
