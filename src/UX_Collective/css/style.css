@@ -4,63 +4,58 @@
 
 body, html {margin: 0}
 
-main {padding: 15px 100px 0 100px;}
+main {padding: 15px 100px 0 100px; display: block;}
 
 hr {margin-bottom: 20px;}
 
-header {background: black; padding: 7px 25px; height: 50px; position: fixed; width: 100%;}
+header {background: #111111; padding: 7px 25px; height: 50px; width: 100%;}
 
 footer {background: black; height: 90px; padding: 0 250px}
 
 footer img {position: relative; top: 25px}
 
-article {margin-bottom: 60px;}
+article {margin-bottom: 60px; overflow: auto;}
 
-.cover {display: inline-block; height: 170px}
+.cover {display: inline-block; height: 170px; margin-top: 5px;}
 
 .articles {width: 850px; margin: auto;}
 
-.article_main {width: 600px; display: inline-block; margin-right: 40px;}
+.article_main {width: 600px; display: inline-block; margin-right: 40px; float: left;}
 
-.links_mobile {display: none; font-family: Marat; text-transform: uppercase; background: black; height: 100%; top: 50px; position: fixed; right: 0;}
+.links_mobile {display: none; font-family: Marat; text-transform: uppercase; background: #111111; top: 49px; position: absolute; right: 0; z-index: 1; border-radius: 0 0 0 5px;}
 
 .links_mobile a {display: block; padding: 20px;}
 
 .menu_icon {display: none; height: 36px; float: right;}
 
-.links_desktop {display: inline-block; position: relative; bottom: 11px}
+.links_desktop {display: inline-block; position: relative; bottom: 11px;}
 
 .links_desktop span {margin: 0 15px;}
 
 .links_desktop a {display: inline-block; text-transform: uppercase; font-family: Marat}
 			
-a {color: white; text-decoration: none; letter-spacing: 2px}
+a {color: #d0d0d0; text-decoration: none; letter-spacing: 2px}
+
+a:hover {color: #fff;}
 
 .v-line {display: inline-block; width: 1px; height: 20px; background: white; position: relative; top: 5px;}
 
-.logo, h1 {font-family: 'Times New Roman'}
-
-.logo {display: inline-block; margin-right: 85px;}
-
-.logo img {width: 37px; margin-right: 10px}
-
-.logo span {color: white; font-weight: bold; font-size: 24px; position: relative; top: -10px;}
+.logo {width: 216px; height: 36px; display: inline-block; margin-right: 40px;}
 			
-.icon {width: 15px; float: right; margin: 10px}
-
-.star {width: 10px; float: none; margin: 0}
+.icon {float: right; margin: 10px}
+.bookmark {width: 15px; height: 20px;}
+.ellipsis-h {width: 15px; height: 15px;}
+.star {width: 10px; height: 10px; float: none; margin: 0;}
 
 .based, .date, .description {color: gray}
 
 .based {margin: 0; font-family: Marat; text-transform: uppercase}
 
-h1 {margin-top: 55px;}
-
 h2 {font-family: helvetica; margin: 5px 0 0 0}
 
 .description {margin: 5px 0}
 
-.date {margin: 0}
+.date {margin: 0;}
 
 .autor {margin: 20px 0 5px 0}
 
@@ -68,8 +63,10 @@ p {font-family: arial}
 
 .modelo {position: fixed; width: 150px; height: 40px; padding: 5px; border: 1px solid black; border-radius: 30px; bottom: 15px; right: 15px; background: white;}
 .modelo:active {opacity: 0.6;}
-.modelo img {height: 100%; margin: 0 15px; display: inline-block; border-right: 1px solid black; padding-right: 10px;}
+.modelo img {height: 100%; margin: 0 15px; display: inline-block; padding-right: 10px; -webkit-animation: modelo-img-in 1s;}
 .modelo p {color: black; margin: 0; display: inline-block; position: relative; transform: translateY(-50%); letter-spacing: normal;}
+.modelo:hover {}
+.modelo:hover img {animation: -webkit-animation: modelo-img-out 1s;}
 
 @media only screen and (max-width: 1015px) {
 	main {padding: 15px 50px 0 50px;}
