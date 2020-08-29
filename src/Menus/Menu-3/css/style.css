@@ -1,3 +1,5 @@
+@font-face {font-family: Calibri; src: url(../font/calibri.ttf);}
+
 body {font-size: 14px; font-family: Calibri}
 
 a {padding: 10px 22px; color: white; text-decoration: none; display: inline-block}
