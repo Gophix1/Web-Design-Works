@@ -3,7 +3,7 @@
 	#3ea296 - Azul escuro
 */
 
-@font-face {font-family: Calibri; src: local(font/calibri.ttf);}
+@font-face {font-family: Calibri; src: url(font/calibri.ttf);}
 
 * {box-sizing: border-box;}
 
