@@ -1,0 +1,14 @@
+* {box-sizing: border-box;}
+
+.grade {
+	background: red;
+    line-height: 0;
+    display: inline-block;
+    }
+
+.square {
+    background: blue;
+    display: inline-block;
+	padding: 30px;
+	margin: 10px;
+    }

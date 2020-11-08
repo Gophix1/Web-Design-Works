@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/script.js"></script>
+		<title>Validação de Formulário | M1.1</title>
+		<link rel="shortcut icon" href="img/favicon.png">
+	</head>
+	<body>
+		<div class="top"></div>
+		<div class="bottom"></div>
+		<form name="formulario" onsubmit="return validar(this)">
+			<img src="img/favicon.png">
+			<div class="campo_user">
+				<label for="user">Usuário ou Email</label>
+				<input id="user" type="text" name="user">
+				<span id="error_user"></span>
+			</div>
+			<div class="campo_password">
+				<label for="password">Senha</label>
+				<input id="password" type="password" name="password">
+				<span id="error_password"></span>
+			</div>
+			<div class="campo_termos">
+				<label for="termos">Aceitar termos de uso</label>
+				<input id="termos" onclick="checkbox()" class="checkbox" type="checkbox" name="termos" value="termos_aceitos">
+				<span id="error_termos"></span>
+			</div>
+			<button type="submit" id="login" value="login" disabled>Login</button>
+			<span id="submitted"></span>
+		</form>
+	</body>
+</html>

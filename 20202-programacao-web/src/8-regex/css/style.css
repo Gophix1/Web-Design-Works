@@ -1,0 +1,16 @@
+@font-face {font-family: 'Roboto'; src: url('../font/Roboto-Regular.ttf') format('truetype');  font-weight: 400;}
+
+* {box-sizing: border-box; font-family: Roboto;}
+
+body {margin: 0;}
+
+p:first-child, h3 {margin-top: 0;}
+p {margin: 8px 0; font-size: 14px;}
+
+input[type=text] {border: 1px solid black; border-radius: 3px; width: 100%; padding: 5px;}
+input[type=text]::placeholder {font-size: 12px;}
+input[type=button] {width: 100%; margin-top: 20px; padding: 5px}
+
+.center {transform: translate(-50%, -50%); top: 50%; left: 50%; position: absolute; text-align: center;}
+.name {font-size: 10px; margin-bottom: 0;}
+.container {padding: 20px; border: 2px solid black; border-radius: 12px;}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Lista 2 - Vetores e Funções JavaScript</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/favicon.png">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="res"><h2 id="resultado">(aguardando função)</h2></div>
+		<div class="exercicios">
+			<h2>Exercícios</h2>
+			<button onclick="desafio()">&nbsp;&nbsp;Desafio&nbsp;&nbsp;</button>
+			<button onclick="grupo_3c()">Grupo 3 - c</button>
+			<button onclick="grupo_3b()">Grupo 3 - b</button>
+			<button onclick="grupo_3a()">Grupo 3 - a</button>
+			<button onclick="grupo_2h()">Grupo 2 - h</button>
+			<button onclick="grupo_2g()">Grupo 2 - g</button>
+			<button onclick="grupo_2f()">Grupo 2 - f</button>
+			<button onclick="grupo_2c()">Grupo 2 - c</button>
+			<button onclick="grupo_2b()" class="alert">Grupo 2 - b</button>
+			<button onclick="grupo_2a()">Grupo 2 - a</button>
+			<button onclick="grupo_1d()" class="fail">Grupo 1 - d</button>
+			<button onclick="grupo_1c()" class="fail">Grupo 1 - c</button>
+			<button onclick="grupo_1b()">Grupo 1 - b</button>
+			<button onclick="grupo_1a()">Grupo 1 - a</button>
+		</div>
+		<div class="exemplos">
+			<h2>Exemplos</h2>
+			<input type="text" id="texto" placeholder="alert(&quot;Olá Mundo!&quot;)">
+			<button class="input" type="button" onclick="exemplo_eval()">eval</button>
+			<br><br>
+			<button onclick="exemplo_sort_random()">.sort() Math.random()</button>
+			<button onclick="exemplo_date()">Date()</button>
+			<button onclick="exemplo_nan()">isNaN()</button>
+			<button onclick="exemplo_length()">.length</button>
+			<button onclick="exemplo_up_lowercase()">.toUpperCase() .toLowerCase()</button>
+		</div>
+		<script>
+			var print = document.getElementById("resultado");
+		</script>
+		<div class="legendas">
+			<h2>legendas</h2>
+			<p><span id="yellow"></span>Incorreto / Não concluído</p>
+			<p><span id="red"></span>Não iniciado</p>
+		</div>
+	<p class="dark"><img src="img/moon.svg">Modo noturno ativo</p>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>D&D Search</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/script.js"></script>
+		<link rel="shortcut icon" href="img/favicon.png">
+	</head>
+	<body onload="requisitar()">
+	<img class="bg drag-disable select-disable" src="img/wall04.jpg">
+		<div class="center">
+			<h3>D&D Search</h3>
+			<div class="campo">
+				<input id="campo" type="text" placeholder="spells, monsters, classes, features..." oninput="this.value = this.value.toLowerCase()" /><!--
+				--><button id="procurar">
+					<img class="drag-disable select-disable" src="img/search.svg">
+				</button>
+			</div>
+			<p id="result">Não sabe por onde começar? pesquise com o campo em branco!</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+@font-face {
+	font-family: 'Keep Calm'; src: url('../font/KeepCalm-Medium.ttf') format('truetype'); 
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Roboto'; src: url('../font/Roboto-Regular.ttf') format('truetype'); 
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Roboto'; src: url('../font/Roboto-Light.ttf') format('truetype'); 
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Roboto'; src: url('../font/Roboto-Bold.ttf') format('truetype'); 
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Roboto'; src: url('../font/Roboto-Black.ttf') format('truetype'); 
+	font-weight: 900;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%
+	}
+
+body {
+	margin: 0;
+	background: black;
+	}
+
+.bg {
+	position: fixed;
+	z-index: -1;
+	opacity: 0.5;
+	width: 100%;
+	height: auto;
+	}
+	
+.drag-disable {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+
+.select-disable {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.center {
+	padding-top: 50px;
+	text-align: center;
+	width: 95%;
+	margin: auto;
+	}
+
+h3, p, input {
+	color: white;
+	}
+
+h3 {
+	font-size: 40px;
+	margin: 0 0 15px 0;
+	font-family: "Roboto";
+	font-weight: 900;
+	text-shadow: 2px 2px 4px black;
+	}
+
+input {
+	padding: 5px 5px 5px 0;
+	color: white;
+	width: 240px;
+	margin: auto;
+	border-width: 0 0 2px 0;
+	border-color: white;
+    outline: none;
+    background: transparent;
+	border-style: solid;
+	font-size: 14px;
+	font-family: Roboto;
+	font-weight: 300;
+	text-shadow: 1px 1px 1px black;
+	margin-bottom: 15px;
+	}
+	
+input:focus {
+	border-color: #cfcfcf;
+	}
+
+.campo * {
+	display: inline-block;
+	}
+
+button {
+	padding: 0;
+	background: transparent;
+	outline: none;
+	border: none;
+	position: relative;
+	bottom: -9px;
+	right: -7px;
+	cursor: pointer;
+	}
+
+button:active {
+	opacity: 0.7;
+	}
+
+button img {
+	height: 22px;
+	bottom: 0;
+	-webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+	}
+
+::placeholder {
+	color: #919191;
+	text-shadow: 0 0 1px black;
+	}
+	
+#result {
+	font-family: Roboto;
+	font-weight: 400;
+	text-shadow: 2px 2px 3px black;
+	margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1025px) {
+	h3 {
+		font-size: 30px;
+		}
+	.bg {
+		height: 100%;
+		width: auto;
+		}
+	}

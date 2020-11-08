@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        //exercicio 1
+        /*
+        let valor = prompt("digite um valor");
+        valor--;
+        alert(valor);
+        */
+
+        //exercicio 2
+        /*
+        let base = prompt("base");
+        let altura = prompt("altura");
+        let area = base*altura;
+        alert(area);
+        */
+
+        //exercicio 3
+        /*
+        let ano = prompt("quantos anos");
+        let mes = prompt("quantos =meses");
+        let dia = prompt("quantos dias");
+
+        // padrão camelCase = totalDias
+        // padrão snake_case = total_dias
+        // padrão kebab-case = total-dias
+
+        //let totalDias = ano*365+mes*30+parseInt(dia);
+        let totalDias = ano*365+mes*30+dia*1;
+
+        alert(totalDias);
+        */
+
+        //exercicio 4
+        /*
+        let totalEleitores = parseInt(prompt("Total eleitores"));
+        let totalBrancos = parseInt(prompt("votos brancos"));
+        let totalNulos = parseInt(prompt("votos nulos"));
+        let totalValidos = totalEleitores-totalBrancos-totalNulos;//parseInt(prompt("votos válidos"));
+
+        let percentualBrancos = (totalBrancos*100)/totalEleitores;
+        let percentualNulos = (totalNulos*100)/totalEleitores;
+        let percentualValidos = (totalValidos*100)/totalEleitores;
+        alert(percentualBrancos);
+        alert(percentualNulos);
+        alert(percentualValidos);
+        */
+
+        //exercicio 5
+        /*
+        let salarioAtual = parseFloat(prompt("salario atual"));
+        let reajuste = parseFloat(prompt("Percentual de reajuste"));
+        let novoSalario = salarioAtual+((salarioAtual*reajuste)/100);
+        alert(novoSalario);
+        */
+
+        //exercicio 6
+        /*
+        let custoFabrica = parseFloat(prompt("custo"));
+        let percentualDistribuidor = 28;
+        let percentualImposto = 45;
+        let valorVenda = custoFabrica+(custoFabrica*percentualDistribuidor/100)+(custoFabrica*percentualImposto/100);
+        alert(valorVenda);
+        */
+
+        //exercicio 7
+        /*
+        let carrosVendidos = parseInt(prompt("total carros"));
+        let valorVendas = parseFloat(prompt("total vendas"));
+        let salarioFixo = parseFloat(prompt("salario fixo"));
+        let valorPorCarro = parseFloat(prompt("valor por carro"));
+
+        let salario = salarioFixo+(valorPorCarro*carrosVendidos)+(valorVendas*5/100);
+        alert(salario);
+        */
+
+        //exercicio 8
+        /*
+        let temperaturaF = parseFloat(prompt("temperatura"));
+        let temperaturaC = (temperaturaF-32)*5/9;
+        alert(temperaturaC);
+        */
+
+        //exercicio 9
+        /*
+        let m1 = parseFloat(prompt("m1"));
+        let m2 = parseFloat(prompt("m2"));
+        let m3 = parseFloat(prompt("m3"));
+
+        let mf = (m1*2+m2*3+m3*5)/10;
+
+        alert(mf);
+        */
+
+        //exercicio 10
+        /*
+        let valor = prompt("valor");
+        if (valor > 10){
+            alert("é maior que 10");
+        } else {
+            alert("não é maior que 10");
+        }
+        */
+
+        //exercicio 11
+        /*
+        let valor = prompt("valor");
+        if (valor >= 0){
+            alert("positivo e eu quero ir embora");
+        } else {
+            alert("negativo, so vai as 10:30");
+        }
+        */
+
+        //exercicio 12
+        /*
+        let total = prompt("quantas maças");
+
+        if (total > 12){
+            valor = total*1;
+        } else {
+            valor = total*1.30;
+        }
+
+        //operador ternário!!!!
+        valor = total > 12 ? total*1 : total*1.3;
+
+        alert(valor);
+        */
+
+
+
+        function avaliarExpressao() {
+            let expressao = document.getElementById('texto').value;
+            eval(expressao);
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+    <input type="text" id="texto">
+    <button type="button" onclick="avaliarExpressao()">Avaliar</button>
+</body>
+</html>

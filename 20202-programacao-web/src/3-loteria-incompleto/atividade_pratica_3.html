@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        let numerosSorteados;
+
+        let cor = '#BABACA';
+
+        let handler;
+
+        function loteria() {
+            let numeros = [];
+            do {
+                let numero = Math.floor(Math.random()*60)+1;
+                if (!numeros.includes(numero)){
+                    numeros.push(numero);
+                }
+            } while (numeros.length < 6);
+            return numeros;
+        }
+
+        function conferirJogo(numerosSorteados, numerosApostados){
+            let totalAcertos = 0;
+            numerosApostados.forEach(numero => {
+                if (numerosSorteados.includes(numero)) {
+                    totalAcertos++;
+                }
+            });
+            return totalAcertos;
+        }
+
+        function realizarSorteio() {
+            numerosSorteados = loteria();
+            painel = document.getElementById('painel-jogo');
+            console.log(painel);
+            painel.style.display = 'block';
+
+            if (handler) {
+                clearInterval(handler);
+            }
+
+            handler = setInterval(function() {
+                painel = document.getElementById('painel-jogo');
+                painel.style.backgroundColor = painel.style.backgroundColor == 'white' ? cor : 'white';
+            },500);
+        }
+
+        function jogar() {
+            const numerosApostados = [];
+            for (let x=1; x <= 6; x++) {
+                numerosApostados.push(parseInt(document.getElementById('v'+x).value));
+            }
+            const acertos = conferirJogo(numerosSorteados, numerosApostados);
+
+            let mensagem;
+            if (acertos < 4) {
+                cor = 'red';
+                mensagem = 'Loser';
+            } else if (acertos == 4) {
+                cor = '#d2e839';
+                mensagem = 'Ganhou na quadra';
+            } else if (acertos == 5) {
+                cor =  '#5d9adb';
+                mensagem = 'Deu quina.... já é alguma coisa...';
+            } else if (acertos == 6) {
+                cor =  '#51cd15';
+                mensagem = 'Nunca mais quero ouvir a voz do bughi....';
+            }
+
+            document.getElementById('resultado').innerHTML = mensagem;
+
+        }
+
+        function entrar(event){
+            //console.log(event);
+            event.target.style.backgroundColor = 'red';
+        }
+
+        function sair(event) {
+            //console.log(event);
+            event.target.style.backgroundColor = 'white';
+        }
+
+        function load() {
+
+            document.addEventListener('mousemove', function(evt) {
+               console.log(evt.clientX, evt.clientY);
+            });
+
+            document.getElementById('botao-realizar-sorteio').addEventListener('click', function () {
+                realizarSorteio();
+            });
+
+            document.getElementById('botao-jogar').addEventListener('click', function () {
+                jogar();
+            });
+
+           //let escolhas = document.getElementsByName('escolha');
+           //console.log(escolhas);
+
+           let botoes = document.getElementsByTagName('button');
+           for (botao of botoes) {
+               botao.style.backgroundColor = 'black';
+               botao.style.color = 'white';
+               botao.style.padding = '20px';
+           }
+
+           let inputs = document.getElementsByTagName('input');
+           for (input of inputs) {
+               //console.log(input);
+               input.addEventListener('mouseover',entrar);
+               input.addEventListener('mouseleave',sair);
+           }
+
+          // document.querySelector('.ocultar') jquery
+
+        }
+
+    </script>
+    <style>
+        .ocultar {
+            display: none;
+        }
+
+        #painel-jogo {
+            border: 1px solid black;
+            padding: 50px;
+            border-radius: 100px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body onload="load()">
+    <button id="botao-realizar-sorteio">Realizar sorteio</button>
+    <div id="painel-jogo" class="ocultar" > <!--  onmouseover="entrar()" onmouseleave="sair()" -->
+        <h1>Jogue agora na megasena!!!</h1>
+        <input type="number" min="1" max="60" id="v1">
+        <input min="1" max="60" type="number" id="v2">
+        <input min="1" max="60" type="number" id="v3">
+        <input type="number" min="1" max="60" id="v4">
+        <input min="1" max="60" type="number" id="v5">
+        <input min="1" max="60" type="number" id="v6">
+        <button id="botao-jogar">Jogar</button>
+        <span id="resultado"></span>
+        <input type="radio" name="escolha" id="escolha-dinheiro" value="dinheiro"><label for="escolha-dinheiro">Receber em dinheiro</label>
+        <input type="radio" name="escolha" id="escolha-ouro" value="ouro"> <label for="escolha-ouro">Receber em barras de outro</label>
+
+    </div>
+
+
+</body>
+</html>
