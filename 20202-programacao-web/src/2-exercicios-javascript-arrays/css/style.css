@@ -1,44 +1,159 @@
-* {box-sizing: border-box; font-family: monospace; text-transform: lowercase;}
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+  text-transform: lowercase;
+}
 
-.exemplos button, #resultado, input[type="text"] {text-transform: none;}
+body {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px 20px 20px;
+}
 
-h2 {margin: 20px 0 10px 5px;}
+.exemplos button,
+#resultado,
+input[type="text"] {
+  text-transform: none;
+}
 
-.legendas p {margin: 5px;}
+h2 {
+  margin: 20px 0 10px 5px;
+}
 
-#red, #yellow {width: 5px; height: 5px; display: inline-block; margin-right: 5px;}
-#red {background: #cc1f1f;}
-#yellow {background: #c7b302;}
+.legendas p {
+  margin: 5px;
+}
 
-.res {text-align: center;}
-#resultado {border: 1px solid black; display: inline-block; padding: 10px; margin: 20px; word-break: break-all;}
+#red,
+#yellow {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  margin-right: 5px;
+}
 
-button {border: 2px solid black; background: white; padding: 10px; margin: 5px; cursor: pointer; font-size: 16px;}
-button:hover {border: 2px dashed black;}
+#red {
+  background: #cc1f1f;
+}
 
-input[type="text"] {padding: 4px 5px 2px 5px; margin: 5px;}
-input[type="text"]:focus, button:focus {outline: none;}
+#yellow {
+  background: #c7b302;
+}
 
-.input {border: 1px solid black; background: white; cursor: pointer; padding: 1px 5px; margin: 5px;}
-.input:hover {border: 1px dashed black;}
+.res {
+  text-align: center;
+}
 
-.alert {border: 2px solid #c7b302;}
-.alert:hover {border: 2px dashed #c7b302;}
+#resultado {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+  word-break: break-word;
+}
 
-.fail {border: 2px solid #cc1f1f;}
-.fail:hover {border: 2px dashed #cc1f1f;}
+button {
+  border: 2px solid black;
+  background: white;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
-.dark {display: none;}
-.dark img {width: 10px; margin-right: 5px; position: relative; bottom: -1px;}
+button:hover {
+  border: 2px dashed black;
+}
+
+input[type="text"] {
+  padding: 4px 5px 2px 5px;
+  margin: 5px;
+}
+
+input[type="text"]:focus,
+button:focus {
+  outline: none;
+}
+
+.input {
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+  padding: 1px 5px;
+  margin: 5px;
+}
+.input:hover {
+  border: 1px dashed black;
+}
+
+.alert {
+  border: 2px solid #c7b302;
+}
+.alert:hover {
+  border: 2px dashed #c7b302;
+}
+
+.fail {
+  border: 2px solid #cc1f1f;
+}
+
+.fail:hover {
+  border: 2px dashed #cc1f1f;
+}
+
+.exercicios .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exercicios button {
+  flex: auto;
+}
+
+.dark {
+  display: none;
+}
+
+.dark img {
+  width: 10px;
+  margin-right: 5px;
+  position: relative;
+  bottom: -1px;
+}
 
 @media (prefers-color-scheme: dark) {
-	* {color: white;}
-	body {background: black;}
-	button {background: black; border: 2px solid white;}
-	button:hover {border: 2px dashed white;}
-	#resultado {border: 1px solid white;}
-	.input {background: black; border: 1px solid white;}
-	.input:hover {border: 1px dashed white;}
-	input[type="text"] {background: black; border: 1px solid white;}
-	.dark {display: inline-block; position: fixed; margin: 0; right: 10px; bottom: 10px;}
+  * {
+    color: white;
+  }
+  body {
+    background: black;
+  }
+  button {
+    background: black;
+    border: 2px solid white;
+  }
+  button:hover {
+    border: 2px dashed white;
+  }
+  #resultado {
+    border: 1px solid white;
+  }
+  .input {
+    background: black;
+    border: 1px solid white;
+  }
+  .input:hover {
+    border: 1px dashed white;
+  }
+  input[type="text"] {
+    background: black;
+    border: 1px solid white;
+  }
+  .dark {
+    display: inline-block;
+    position: fixed;
+    margin: 0;
+    right: 10px;
+    bottom: 10px;
+  }
 }

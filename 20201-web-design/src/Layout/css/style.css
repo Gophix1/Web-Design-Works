@@ -7,7 +7,7 @@
 			
 * {box-sizing: border-box;}
 
-body, html {margin: 0; text-transform: uppercase; font-family: Teko-Medium; width: 600; height: 800px; font-size: 30px;}
+body, html {margin: 0; text-transform: uppercase; font-family: Teko-Medium; height: 800px; font-size: 30px;}
 
 #global {border: 2px solid #c5c5c5; color: #c5c5c5; margin: 80px 150px; padding: 5px;}
 
@@ -19,7 +19,7 @@ body, html {margin: 0; text-transform: uppercase; font-family: Teko-Medium; widt
 
 #menu {border: 2px solid #98dac6; color: #98dac6; width: calc(30% - 10px); padding: 220px 0; margin: 5px;}
 
-#conteudo, #menu {display: inline-block; box-sizing: content;}
+#conteudo, #menu {display: inline-block;}
 
 #rodape {border: 2px solid #ff7b00; color: #ff7b00; margin: 5px; padding: 100px 0 60px 0;}
 

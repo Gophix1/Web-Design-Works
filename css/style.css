@@ -1,25 +1,30 @@
 body {
-	margin: 0;
-	background: black;
-	color: white;
+  margin: 0;
+  background: black;
+  color: white;
 }
+
 main {
-	font-family: monospace;
-	font-size: 20px;
-	transform: translate(-50%, -50%);
-	position: absolute;
-	left: 50%;
-	top: 50%;
+  width: fit-content;
+  font-family: monospace;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0 5px;
 }
+
 a {
-	text-decoration: none;
-	color: white;
-	display: inline-block;
-	margin-bottom: 5px;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 0;
+  opacity: 0.8;
 }
-a:last-child {
-	margin-bottom: 0;
-}
+
 a:hover {
-	opacity: 0.6;
+  transition: opacity 0.2s;
+  opacity: 1;
 }
