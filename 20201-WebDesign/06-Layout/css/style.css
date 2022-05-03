@@ -3,24 +3,72 @@
 /*azul: #98dac6*/
 /*laranja: #ff7b00*/
 
-@font-face {font-family: Teko-Medium; src: url(../font/Teko-Medium.ttf);}
-			
-* {box-sizing: border-box;}
+@font-face {
+  font-family: Teko-Medium;
+  src: url(../font/Teko-Medium.ttf);
+}
 
-body, html {margin: 0; text-transform: uppercase; font-family: Teko-Medium; height: 800px; font-size: 30px;}
+* {
+  box-sizing: border-box;
+}
 
-#global {border: 2px solid #c5c5c5; color: #c5c5c5; margin: 80px 150px; padding: 5px;}
+body,
+html {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: Teko-Medium;
+  height: 800px;
+  font-size: 30px;
+}
 
-#global p {margin-left: 30px;}
+#global {
+  border: 2px solid #c5c5c5;
+  color: #c5c5c5;
+  margin: 80px 150px;
+  padding: 5px;
+}
 
-#topo {border: 2px solid #e40090; color: #e40090; margin: 5px; padding: 40px 0;}
+#global p {
+  margin-left: 30px;
+}
 
-#conteudo {border: 2px solid #98dac6; color: #98dac6; width: calc(70% - 10px); margin: 5px; padding: 220px 0;}
+#topo {
+  border: 2px solid #e40090;
+  color: #e40090;
+  margin: 5px;
+  padding: 40px 0;
+}
 
-#menu {border: 2px solid #98dac6; color: #98dac6; width: calc(30% - 10px); padding: 220px 0; margin: 5px;}
+#conteudo {
+  border: 2px solid #98dac6;
+  color: #98dac6;
+  width: calc(70% - 10px);
+  margin: 5px;
+  padding: 220px 0;
+}
 
-#conteudo, #menu {display: inline-block;}
+#menu {
+  border: 2px solid #98dac6;
+  color: #98dac6;
+  width: calc(30% - 10px);
+  padding: 220px 0;
+  margin: 5px;
+}
 
-#rodape {border: 2px solid #ff7b00; color: #ff7b00; margin: 5px; padding: 100px 0 60px 0;}
+#conteudo,
+#menu {
+  display: inline-block;
+}
 
-span {position: relative; bottom: -1px; font-size: 26px}
+#rodape {
+  border: 2px solid #ff7b00;
+  color: #ff7b00;
+  margin: 5px;
+  padding: 100px 0 60px 0;
+}
+
+span {
+  position: relative;
+  bottom: -1px;
+  font-size: 26px;
+}

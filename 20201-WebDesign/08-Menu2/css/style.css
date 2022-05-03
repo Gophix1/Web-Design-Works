@@ -1,19 +1,54 @@
-@font-face {font-family: ITC-Heavy; src: url(../font/adderville-itc-std-heavy.otf);}
+@font-face {
+  font-family: ITC-Heavy;
+  src: url(../font/adderville-itc-std-heavy.otf);
+}
 
-body {font-size: 18px; font-family: ITC-Heavy;}
+body {
+  font-size: 18px;
+  font-family: ITC-Heavy;
+}
 
-a {padding: 16px 28px; color: white; display: inline-block; text-decoration: none;}
+a {
+  padding: 16px 28px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
 
-a:hover, #active {background-image: linear-gradient(#3c9be4, #1774b9); -webkit-tap-highlight-color: transparent;}
+a:hover,
+#active {
+  background-image: linear-gradient(#3c9be4, #1774b9);
+  -webkit-tap-highlight-color: transparent;
+}
 
-#active {border-radius: 3px 0 0 0;}
+#active {
+  border-radius: 3px 0 0 0;
+}
 
-ul {list-style: none; margin: 0; padding: 0; width: 600px; background-image: linear-gradient(#5a5a5a, #242424); border-radius: 3px; border-bottom: 4px solid #1072bb;}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  background-image: linear-gradient(#5a5a5a, #242424);
+  border-radius: 3px;
+  border-bottom: 4px solid #1072bb;
+}
 
-li {display: inline-block;}
+li {
+  display: inline-block;
+}
 
 @media (max-width: 500px) {
-	ul {width: auto;}
-	a {display: block; padding: 16px auto;}
-	li {display: block; text-align: center;}
+  ul {
+    width: auto;
+  }
+  a {
+    display: block;
+    padding: 16px auto;
+  }
+  li {
+    display: block;
+    text-align: center;
+  }
 }

@@ -1,60 +1,179 @@
-@font-face {font-family: 'Raleway'; src: url(../font/Raleway-Regular.ttf)}
-@font-face {font-family: 'Source Sans Pro'; font-weight: 300; src: url(../font/SourceSansPro-Light.ttf)}
-@font-face {font-family: 'Source Sans Pro'; font-weight: 400; src: url(../font/SourceSansPro-Regular.ttf)}
+@font-face {
+  font-family: "Raleway";
+  src: url(../font/Raleway-Regular.ttf);
+}
 
-* {box-sizing: border-box;}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  src: url(../font/SourceSansPro-Light.ttf);
+}
 
-body, html {margin: 0; color: white; background: red; font-family: 'Source Sans Pro';}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  src: url(../font/SourceSansPro-Regular.ttf);
+}
 
-header {padding: 0.7em 5.5em; background: #FFF;}
+* {
+  box-sizing: border-box;
+}
 
-a {text-decoration: none; color: red; font-size: 1.7em; font-weight: bold;}
+body,
+html {
+  margin: 0;
+  color: white;
+  background: red;
+  font-family: "Source Sans Pro";
+}
 
-main {padding: 5em 1em;}
+header {
+  padding: 0.7em 5.5em;
+  background: #fff;
+}
 
-.content {width: 50%; padding-left: 4.5em; display: inline-block; float: left}
+a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.7em;
+  font-weight: bold;
+}
 
-.content p {font-size: 1.3em}
+main {
+  padding: 5em 1em;
+}
 
-h1 {margin: 0.2em 0 0.7em 0; font-family: Raleway; font-size: 3.1em; font-weight: 300;}
+.content {
+  width: 50%;
+  padding-left: 4.5em;
+  float: left;
+}
 
-.clearfix {clear: both;}
+.content p {
+  font-size: 1.3em;
+}
 
-.logo {width: calc(50% - 4.5em); display: inline-block; text-align: center;}
+h1 {
+  margin: 0.2em 0 0.7em 0;
+  font-family: Raleway;
+  font-size: 3.1em;
+  font-weight: 300;
+}
 
-img {width: 12em;}
+.clearfix {
+  clear: both;
+}
 
-footer {display: -webkit-flex; display: flex; flex-wrap: wrap;}
+.logo {
+  width: calc(50% - 4.5em);
+  display: inline-block;
+  text-align: center;
+}
 
-footer div {flex: 1; padding: 3em 3em 5em 3em; margin-bottom: 10px; background: #571212; height: 400px;}
+img {
+  width: 12em;
+}
 
-footer div:nth-child(2) {margin: 0 10px;}
+footer {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-footer p {color: #E98A8A; margin: 0;}
+footer div {
+  flex: 1;
+  padding: 3em 3em 5em 3em;
+  margin-bottom: 10px;
+  background: #571212;
+  height: 400px;
+}
 
-h2 {margin: 0; padding-bottom: 2em; font-size: 1.4em; font-weight: 400;}
+footer div:nth-child(2) {
+  margin: 0 10px;
+}
+
+footer p {
+  color: #e98a8a;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  padding-bottom: 2em;
+  font-size: 1.4em;
+  font-weight: 400;
+}
 
 @media only screen and (max-width: 800px) {
-	header {padding: 20px 20px;}
-	.logo, main br {display: none;}
-	main {text-align: center; padding: 70px 50px;}
-	.content {width: auto; float: none; display: block; padding: 0;}
-	.content p {margin: 30px 0 0 0;}
-	footer div:nth-child(2) {margin: 0 0 0 10px;}
-	footer div {flex: 1 0 40%;}
+  header {
+    padding: 20px 20px;
+  }
+  .logo,
+  main br {
+    display: none;
+  }
+  main {
+    text-align: center;
+    padding: 70px 50px;
+  }
+  .content {
+    width: auto;
+    float: none;
+    display: block;
+    padding: 0;
+  }
+  .content p {
+    margin: 30px 0 0 0;
+  }
+  footer div:nth-child(2) {
+    margin: 0 0 0 10px;
+  }
+  footer div {
+    flex: 1 0 40%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-	h1 {margin: 0; font-size: 35px;}
-	h2 {font-size: 24px; padding: 0; margin-bottom: 14px;}
-	footer {display: block;}
-	footer div {flex: 0 1 auto; padding: 40px 30px; height: auto;}
-	footer div:nth-child(2) {margin: 0 0 10px 0;}
-	footer p {font-size: 16px;}
+  h1 {
+    margin: 0;
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 24px;
+    padding: 0;
+    margin-bottom: 14px;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer div {
+    flex: 0 1 auto;
+    padding: 40px 30px;
+    height: auto;
+  }
+
+  footer div:nth-child(2) {
+    margin: 0 0 10px 0;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 430px) {
-	main {padding: 40px 30px;}
-	h1 {font-size: 30px;}
-	.content p {font-size: 1.1em;}
+  main {
+    padding: 40px 30px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .content p {
+    font-size: 1.1em;
+  }
 }

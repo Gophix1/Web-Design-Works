@@ -1,54 +1,134 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
-body, html {margin: 0; height: 100%; width: 100%;}
+body,
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
 
-.bg_top {background-color: #45543D; height: 50px; width: 100%;}
+.bg_top {
+  background-color: #45543d;
+  height: 50px;
+  width: 100%;
+}
 
-form {width: 730px; margin: 55px auto;}
+form {
+  width: 730px;
+  margin: 55px auto;
+}
 
-.col1 {float: left;}
+.col1 {
+  float: left;
+}
 
-.submit {float: none; margin-top: 9px;}
+.submit {
+  float: none;
+  margin-top: 9px;
+}
 
-.clearfix {clear: both;}
+.clearfix {
+  clear: both;
+}
 
-.col2 {float: right; margin-top: 60px;}
+.col2 {
+  float: right;
+  margin-top: 60px;
+}
 
-.col2 input {width: 210px;}
+.col2 input {
+  width: 210px;
+}
 
-input, select {padding: 9px; background-color: #E8EFE4; border: 1px solid #bfbfbf; border-radius: 4px;}
+input,
+select {
+  padding: 9px;
+  background-color: #e8efe4;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+}
 
-input, label, select {display: block; margin: 0 0 7px 0;}
+input,
+label,
+select {
+  display: block;
+  margin: 0 0 7px 0;
+}
 
-input:focus {outline: none;}
+input:focus {
+  outline: none;
+}
 
-#reset, #cadastrar {background-color: #45543D; color: white; cursor: pointer; display: inline-block;}
+#reset,
+#cadastrar {
+  background-color: #45543d;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+}
 
-#reset:active, #cadastrar:active {background-color:#313e2b;}
+#reset:active,
+#cadastrar:active {
+  background-color: #313e2b;
+}
 
-#reset {margin-left: 7px;}
+#reset {
+  margin-left: 7px;
+}
 
-#nome, #email {width: 294px;}
+#nome,
+#email {
+  width: 294px;
+}
 
-#rg, #telefone {width: 172px;}
+#rg,
+#telefone {
+  width: 172px;
+}
 
-#nome_pai {width: 253px;}
-
-@media (max-width: 800px) {
-	form {width: auto; margin: 55px;}
+#nome_pai {
+  width: 253px;
 }
 
 @media (max-width: 800px) {
-	form {margin-bottom: 55px;}
-	.col1, .col2 {float: none;}
-	.col2 {margin: 0;}
-	br {display: none;}
+  form {
+    width: auto;
+    margin: 55px;
+  }
+}
+
+@media (max-width: 800px) {
+  form {
+    margin-bottom: 55px;
+  }
+  .col1,
+  .col2 {
+    float: none;
+  }
+  .col2 {
+    margin: 0;
+  }
+  br {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
-	form {margin: 30px;}
+  form {
+    margin: 30px;
+  }
 }
 
 @media (max-width: 400px) {
-	#nome, #rg, #nome_pai, #email, select, #telefone, .col2 input {width: 100%;}
+  #nome,
+  #rg,
+  #nome_pai,
+  #email,
+  select,
+  #telefone,
+  .col2 input {
+    width: 100%;
+  }
 }

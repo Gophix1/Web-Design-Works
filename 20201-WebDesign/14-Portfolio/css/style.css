@@ -1,97 +1,349 @@
-@font-face {font-family: Roboto; src: url(../font/Roboto-Light.ttf);}
-@font-face {font-family: "Open Sans"; src: url(../font/OpenSans-ExtraBold.ttf);}
-@font-face {font-family: Jost; src: url(../font/Jost-Light.ttf);}
+@font-face {
+  font-family: Roboto;
+  src: url(../font/Roboto-Light.ttf);
+}
 
-::-webkit-scrollbar {width: 8px; height: 8px;}
-::-webkit-scrollbar-track {background: #bbbbbba6;}
-::-webkit-scrollbar-thumb {background: #61616182;}
-::-webkit-scrollbar-thumb:hover {background: #00000082;}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../font/OpenSans-ExtraBold.ttf);
+}
 
-* {box-sizing: border-box; -webkit-tap-highlight-color: transparent;}
+@font-face {
+  font-family: Jost;
+  src: url(../font/Jost-Light.ttf);
+}
 
-body, html {width: 100%; height: 100%; margin: 0;}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
-#return-to-top {position: fixed; bottom: 20px; right: 20px; background: #191919b3; width: 45px; height: 45px; display: block; text-decoration: none; display: none; transition: all 0.3s ease; border-radius: 50%;}
+::-webkit-scrollbar-track {
+  background: #bbbbbba6;
+}
 
-#return-to-top img {margin: 0; transform: translate(-50%,-50%); position: relative; left: 50%; top: 50%; width: 19px; transition: all 0.3s ease;}
+::-webkit-scrollbar-thumb {
+  background: #61616182;
+}
 
-#return-to-top:hover {background: #2b2b2bb3;}
+::-webkit-scrollbar-thumb:hover {
+  background: #00000082;
+}
 
-#return-to-top:hover img {top: 35%;}
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
 
-ul a {color: black; text-decoration: none; position: relative;}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 
-ul a:after {background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 1px; left: 50%; position: absolute; background: black; transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0;}
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #191919b3;
+  width: 45px;
+  height: 45px;
+  display: block;
+  text-decoration: none;
+  display: none;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
 
-ul a:hover:after {width: 100%; left: 0;}
+#return-to-top img {
+  margin: 0;
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 19px;
+  transition: all 0.3s ease;
+}
 
-ul span {margin: 0 10px;}
+#return-to-top:hover {
+  background: #2b2b2bb3;
+}
 
-ul {list-style: none; padding: 0; margin: 0; text-align: center; font-family: 'Jost', sans-serif; text-transform: uppercase; position: relative; top: 10px;}
-			
-li {display: inline-block;}
-		
-#main, #projeto {height: 100%;}
+#return-to-top:hover img {
+  top: 35%;
+}
 
-#projeto, #historia, #inspiracoes, #futuro, #sobre {margin: 0 150px;}
+ul a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
 
-#historia, #inspiracoes, #futuro, #sobre {margin-bottom: 70px;}
+ul a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
 
-.content {position: relative; transform: translate(0, -50%); top: 50%;}
+ul a:hover:after {
+  width: 100%;
+  left: 0;
+}
 
-.title, .sub-title {font-family: 'Open Sans', sans-serif; margin: 0; text-transform: uppercase;}
+ul span {
+  margin: 0 10px;
+}
 
-.title {position: absolute; transform: translate(-50%,-50%); top: 50%; left: 50%;}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  top: 10px;
+}
 
-p {font-family: monospace; font-size: 16px; margin-top: 0;}
+li {
+  display: inline-block;
+}
 
-.grid {font-size: 0; max-width: 450px; margin-right: 20px; float: left;}
+#main,
+#projeto {
+  height: 100%;
+}
 
-#projeto p {margin: auto; width: 60%; text-align: center; font-size: 20px; font-family: roboto;}
+#projeto,
+#historia,
+#inspiracoes,
+#futuro,
+#sobre {
+  margin: 0 150px;
+}
 
-#historia h1 {margin-bottom: 20px;}
-#historia p {text-align: justify; margin-top: 0;}
-#historia img {float: right; width: 50%; margin-left: 20px;}
+#historia,
+#inspiracoes,
+#futuro,
+#sobre {
+  margin-bottom: 70px;
+}
 
-#inspiracoes {clear: both; overflow: auto;}
-#inspiracoes img {width: 150px;}
-#inspiracoes h1 {margin-bottom: 20px;}
+.content {
+  position: relative;
+  transform: translate(0, -50%);
+  top: 50%;
+}
 
-#futuro {overflow: hidden;}
-#futuro h1 {margin-bottom: 20px;}
-#futuro img {width: 300px; float: right; margin-left: 20px;}
+.title,
+.sub-title {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+}
 
-#sobre {clear: both;}
-#sobre h1 {margin-bottom: 20px;}
+.title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
 
-#contato {text-align: center; margin: 50px 0;}
-#contato img {width: 20px; margin: 0 10px;}
-#contato a {-webkit-filter: grayscale(1); filter: grayscale(1); transition: 0.3s;}
-#contato a:hover {-webkit-filter: none; filter: none;}
+p {
+  font-family: monospace;
+  font-size: 16px;
+  margin-top: 0;
+}
 
-footer {text-align: center; margin: 50px 0;}
-footer a {text-decoration: none;}
+.grid {
+  font-size: 0;
+  max-width: 450px;
+  margin-right: 20px;
+  float: left;
+}
+
+#projeto p {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  font-size: 20px;
+  font-family: roboto;
+}
+
+#historia h1 {
+  margin-bottom: 20px;
+}
+
+#historia p {
+  text-align: justify;
+  margin-top: 0;
+}
+
+#historia img {
+  float: right;
+  width: 50%;
+  margin-left: 20px;
+}
+
+#inspiracoes {
+  clear: both;
+  overflow: auto;
+}
+
+#inspiracoes img {
+  width: 150px;
+}
+
+#inspiracoes h1 {
+  margin-bottom: 20px;
+}
+
+#futuro {
+  overflow: hidden;
+}
+
+#futuro h1 {
+  margin-bottom: 20px;
+}
+
+#futuro img {
+  width: 300px;
+  float: right;
+  margin-left: 20px;
+}
+
+#sobre {
+  clear: both;
+}
+
+#sobre h1 {
+  margin-bottom: 20px;
+}
+
+#contato {
+  text-align: center;
+  margin: 50px 0;
+}
+
+#contato img {
+  width: 20px;
+  margin: 0 10px;
+}
+
+#contato a {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+
+#contato a:hover {
+  -webkit-filter: none;
+  filter: none;
+}
+
+footer {
+  text-align: center;
+  margin: 50px 0;
+}
+
+footer a {
+  text-decoration: none;
+}
 
 @media (prefers-color-scheme: dark) {
-	::-webkit-scrollbar-thumb:hover {background: #6d6d6d;}
-	body {background: #121212; color: #c3c3c3;}
-	#main a {color: white;}
-	ul a:after {background: white;}
-	#return-to-top, ::-webkit-scrollbar-track {background: #272727;}
-	img {filter: brightness(0.8);}
-	#contato a {filter: contrast(0%);}
-	#contato a:hover {filter: contrast(80%);}
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6d6d6d;
+  }
+
+  body {
+    background: #121212;
+    color: #c3c3c3;
+  }
+
+  #main a {
+    color: white;
+  }
+
+  ul a:after {
+    background: white;
+  }
+
+  #return-to-top,
+  ::-webkit-scrollbar-track {
+    background: #272727;
+  }
+
+  img {
+    filter: brightness(0.8);
+  }
+
+  #contato a {
+    filter: contrast(0%);
+  }
+
+  #contato a:hover {
+    filter: contrast(80%);
+  }
 }
 
 @media (max-width: 450px) {
-	h1 {font-size: 26px;}
-	p {font-size: 14px;}
-	ul {width: 90%; margin: auto;}
-	#projeto, #historia, #inspiracoes, #futuro, #sobre {margin: 0 20px;}
-	#projeto p {width: auto;}
-	#historia img {width: 100%; margin: 0 0 10px 0; float: none;}
-	#futuro img {float: none; margin: 0 0 10px 0; width: 100%;}
-	#inspiracoes {overflow: visible;}
-	#inspiracoes img {min-width: 100px; flex: 1;}
-	.grid {margin: 0 0 10px 0; display: flex; flex-wrap: wrap; width: 100%;}
+  h1 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  ul {
+    width: 90%;
+    margin: auto;
+  }
+  #projeto,
+  #historia,
+  #inspiracoes,
+  #futuro,
+  #sobre {
+    margin: 0 20px;
+  }
+
+  #projeto p {
+    width: auto;
+  }
+
+  #historia img {
+    width: 100%;
+    margin: 0 0 10px 0;
+    float: none;
+  }
+
+  #futuro img {
+    float: none;
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+
+  #inspiracoes {
+    overflow: visible;
+  }
+
+  #inspiracoes img {
+    min-width: 100px;
+    flex: 1;
+  }
+
+  .grid {
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
