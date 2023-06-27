@@ -1,25 +1,102 @@
-* {box-sizing: border-box; text-align: center; color: white;}
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Medium.ttf");
+}
 
-body, html {margin: 0; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; background: #0f101b; width: 100%}
+* {
+  box-sizing: border-box;
+  color: white;
+}
 
-main {display: -webkit-flex; display: flex; flex-wrap: wrap; margin: 20px 20px 0 20px}
+body {
+  margin: 20px;
+  background: #0f101b;
+}
 
-img {width: 200px; filter: grayscale(0.4); border-radius: 10px}
+main {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-a {flex: 1 0 auto; margin-bottom: 20px; text-decoration: none; color: white; display: block; -webkit-tap-highlight-color: transparent; font-size: 13px}
+img {
+  width: 200px;
+  filter: grayscale(0.4);
+  border-radius: 10px;
+}
 
-a:hover {color: #797979}
+a {
+  flex: 1 0 auto;
+  text-decoration: none;
+  color: white;
+  display: block;
+  -webkit-tap-highlight-color: transparent; /*Desativa o highlight azul nos celulares*/
+  font-size: 13px;
+  text-align: center;
+}
 
-a:hover img {opacity: 0.8}
+a:hover {
+  opacity: 0.8;
+}
 
-.menu {float: left; margin: 0 20px 0 20px; display: inline-block;}
+p {
+  font-family: Roboto;
+  text-transform: uppercase;
+}
 
-.menu a {text-align: left;}
+@media (prefers-color-scheme: Dark) {
+  .img-14 {
+    content: url("../img/14_Portfolio_Dark.png");
+  }
+}
 
-.menu p {margin-top: 0; border-bottom: 1px solid white;}
-			
-@media only screen and (max-width: 1025px) {img {width: 170px;} a {font-size: 0.9em;}}
-@media only screen and (max-width: 770px) {img {width: 220px;} a {font-size: 1.4em;}}
-@media only screen and (max-width: 700px) {img {width: 150px;} a {font-size: 0.8em;}}
-@media only screen and (max-width: 600px) {img {width: 175px;} a {font-size: 1em;}}
-@media only screen and (max-width: 420px) {img {width: 150px;} a {font-size: 0.8em;} main {display: block;} main a {display: inline-block;}}
+@media only screen and (max-width: 1025px) {
+  img {
+    width: 170px;
+  }
+  a {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  img {
+    width: 220px;
+  }
+  a {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  img {
+    width: 150px;
+  }
+  a {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 175px;
+  }
+  a {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  img {
+    width: 150px;
+  }
+  a {
+    font-size: 0.8em;
+  }
+  main {
+    display: block;
+  }
+  main a {
+    display: inline-block;
+  }
+}
